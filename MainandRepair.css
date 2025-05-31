@@ -1,0 +1,136 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f6f6f6;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(rgba(41, 74, 140, 0.95), rgba(43, 73, 220, 0.85));;
+      color: #fff;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      pointer-events: none;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #5978f5;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      padding: 2rem;
+    }
+    h2 {
+      color: #edf6ff;
+      margin-top: 1.5rem;
+      text-align: center;
+      pointer-events: none;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .service-card {
+      flex: 1 1 250px;
+      background: #d9f2fc;
+      border-radius: 6px;
+      padding: 1rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+      pointer-events: none;
+    }
+    .booking-form {
+      margin-bottom: 2rem;
+    }
+    .booking-form input, .booking-form select, .booking-form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.4rem 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .booking-form button {
+      background: #003366;
+      color: #fff;
+      border: none;
+      padding: 0.7rem 1.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 0.5rem;
+    }
+    .faq {
+      margin-bottom: 2rem;
+    }
+    .faq-item {
+      margin-bottom: 1rem;
+    }
+    .faq-question {
+      background: #e3e8ee;
+      cursor: pointer;
+      padding: 0.7rem;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .faq-question:hover{
+        color: #77b7ec;
+        transform: translateY(-5px);
+        transition: transform 0.5s ease-in-out, box-shadow 0.5s ease;
+    }
+
+    .faq-answer {
+      display: none;
+      background: #f9fafb;
+      padding: 0.7rem;
+      border-radius: 4px;
+      margin-top: 0.2rem;
+      pointer-events: none;
+    }
+ 
+    
+    .testimonials {
+      background: #f0f4f8;
+      padding: 1rem;
+      border-radius: 6px;
+      pointer-events: none;
+    }
+    .testimonial {
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+    @media (max-width: 700px) {
+      .container { padding: 1rem; }
+      .services { flex-direction: column; }
+    }
+    
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer-icons {
+    margin-top: 10px;
+}
+
+.icon-link {
+    margin: 0 10px;
+    color: white;
+    transition: transform 0.2s ease;
+    display: inline-block;
+}
+
+.icon-link i {
+    font-size: 20px;
+}
+
+.icon-link:hover {
+    transform: scale(1.1);
+    color: #ccc;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    padding: 5px;
+}

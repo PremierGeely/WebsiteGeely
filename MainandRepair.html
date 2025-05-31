@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <link rel="icon" type="image/png" href="Premier Logo2.png">
+   <link rel="stylesheet" href="MainandRepair.css">
+  <title>Car Maintenance & Repair</title>
+  
+</head>
+<body>
+  <header>
+    <h1>Maintenance & Repair Services</h1>
+    <p>Your trusted partner in car care</p>
+  </header>
+  <div class="container">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Oil Change</h3>
+        <p>Keep your engine running smoothly with regular oil changes.</p>
+      </div>
+      <div class="service-card">
+        <h3>Brake Repair</h3>
+        <p>Ensure your safety with expert brake inspections and repairs.</p>
+      </div>
+      <div class="service-card">
+        <h3>Tire Services</h3>
+        <p>Rotation, balancing, and replacement for optimal performance.</p>
+      </div>
+      <div class="service-card">
+        <h3>Engine Diagnostics</h3>
+        <p>Advanced diagnostics to quickly identify and fix issues.</p>
+      </div>
+    </div>
+
+   
+
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <div class="faq-question">How often should I change my oil?</div>
+        <div class="faq-answer">Most vehicles require an oil change every 5,000 to 7,500 miles, but check your owner's manual for specifics.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">What are signs my brakes need repair?</div>
+        <div class="faq-answer">Common signs include squealing noises, longer stopping distances, or a soft brake pedal.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Do you offer warranty on repairs?</div>
+        <div class="faq-answer">Yes, we offer a 12-month or 12,000-mile warranty on most repairs.</div>
+      </div>
+    </div>
+
+    <h2>Customer Testimonials</h2>
+    <div class="testimonials">
+      <div class="testimonial">"Great service and friendly staff! My car feels brand new." – Alex P.</div>
+      <div class="testimonial">"Quick, honest, and affordable. Highly recommend!" – Jamie L.</div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Car Services & Sales. All rights reserved.
+    <div class="footer-icons">
+        <a class="icon-link" href="https://www.facebook.com/yourpage"
+            target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a class="icon-link" href="https://twitter.com/yourhandle" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a class="icon-link" href="https://www.instagram.com/yourhandle"
+            target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+</footer>
+  <script>
+    // FAQ toggle functionality
+    document.querySelectorAll('.faq-question').forEach(function(question) {
+      question.addEventListener('click', function() {
+        let answer = this.nextElementSibling;
+        answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+      });
+    });
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,455 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Enhanced Typography */
+h1,
+h2,
+h3 {
+    font-weight: 600;
+    color: #a2e4f7;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    margin-bottom: 1.25rem;
+    color: #a2e4f7;
+}
+
+a {
+    color: #90c7ec;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #afdaf7;
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1100px;
+    margin: 80px auto 2rem; 
+    padding: 2rem;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+.section {
+    padding: 2rem 0;
+}
+
+
+/* Header Styling */
+.company-header {
+    text-align: center;
+    padding: 3rem 0;
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.company-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    --glow-color: rgb(209, 250, 251); 
+    --glow-spread-color: rgb(132, 215, 243);
+    --enhanced-glow-color: rgb(25, 192, 226);
+    text-shadow: 0 0 0.5em var(--glow-color); 
+    position: relative;
+    transition: all 0.5s;
+    justify-content: center;
+    animation: about 5s ease-in-out infinite;
+}
+
+ @keyframes about {
+    0%{
+        color: rgb(175, 250, 255);
+    }
+
+    10%{
+        color: rgb(172, 212, 252);
+    }
+
+    25%{
+        color: rgb(141, 255, 221);
+    }
+
+    75%{
+        color: rgb(113, 228, 241);
+    }
+
+    100%{
+        color: rgb(133, 245, 211);
+    }
+  }
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.company-logo {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+    border-radius: 80px;
+    border: 3px solid #003a78;
+    background-image: url(Primier.jpg) ;
+}
+
+.animated-header {
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: white;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 12px rgba(106, 17, 203, 0.4);
+    animation: glow 2.5s infinite alternate;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+    cursor: pointer; 
+}
+
+/* Mission and Vision Section */
+.mission-vision {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 2rem;
+}
+
+.mission,
+.vision {
+    background: #455b73;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.08);
+}
+
+.mission h2,
+.vision h2 {
+    color: #ffffff;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+.image {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.organizationLi {
+    font-weight: 600;
+    margin: auto 2rem; 
+    padding: 2rem;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+
+    animation: about 5s ease-in-out infinite;
+}
+
+.organizationLi h1{
+    position: relative;
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: white;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+}
+
+.core-values-header {
+    grid-column: 1 / -1; 
+    text-align: center;
+    margin: 1.5rem 0 0.1rem; 
+    font-size: 1.2em;
+}
+
+.core-values-header strong {
+    color: #3498db;
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid #3498db;
+}
+
+.core-values-header1 {
+    grid-column: 1 / -1; 
+    text-align: center;
+    margin: 0 0 0.5rem; 
+    font-size: 1.2em;
+   
+    margin-top: -2.3rem; 
+}
+
+.core-values-header1 strong {
+    color: #3498db;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+}
+
+
+/* Company Overview Section */
+.company-overview {
+    background: #455b73;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.08);
+}
+
+.company-overview h2 {
+    color: #ffffff;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 0.5rem;
+}
+
+/* Contact Information Section */
+.contact-info {
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info h2 {
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+
+.contact-info address {
+    font-style: normal;
+    line-height: 1.8;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 50%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* Social Media Links Section */
+.social-media-links {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.08);
+}
+
+.social-media-links h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 0.5rem;
+}
+
+.social-media {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-media a {
+    font-size: 2rem;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
+    color: #3498db;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer-icons {
+    margin-top: 10px;
+}
+
+.icon-link {
+    margin: 0 10px;
+    color: white;
+    transition: transform 0.2s ease;
+    display: inline-block;
+}
+
+.icon-link i {
+    font-size: 20px;
+}
+
+.icon-link:hover {
+    transform: scale(1.1);
+    color: #ccc;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    padding: 5px;
+}
+/* Transparent Sticky Nav with blur */
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(rgba(41, 74, 140, 0.95), rgba(43, 73, 220, 0.85));;
+    color: white;
+    z-index: 1000;
+    backdrop-filter: blur(8px);
+    transition: background 0.3s ease;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 12px;
+    gap: 10px;
+    color: white;
+}
+
+.logo-img {
+     height: 50px;
+    width: 50px;
+    object-fit: contain;
+    border-radius: 10px;
+    border: 3px solid #03274d;
+    background-image: url(Primier.jpg) ;
+}
+
+.sticky-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2em;
+}
+
+.sticky-nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-weight: 600;
+}
+
+.sticky-nav a:hover {
+    color: #ccc;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    justify-content: space-between;
+}
+
+.hamburger span {
+    display: block;
+    height: 4px;
+    background: white;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+/* hanggang dito ang sticky nav*/
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .mission-vision {
+        grid-template-columns: 1fr;
+    }
+
+    #nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: rgba(52, 152, 219, 0.95);
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+        flex-direction: column;
+    }
+
+    #nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .company-info {
+        padding: 1rem;
+    }
+
+    .company-info h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Animation Keyframes */
+@keyframes glow {
+    from {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+
+    to {
+        box-shadow: 0 0 40px rgba(255, 255, 255, 1);
+    }
+}
+
+
+
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="Contact.css">
+    <link rel="icon" type="image/png" href="Premier Logo2.png">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="Premier Logo2.png" alt="Logo" class="logo-img" />
+      <div class="logo-text">
+        Premier <br>
+        Autoventures <br>
+        INC.
+      </div>
+    </div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open navigation menu" />
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav class="nav-menu">
+      <a href="CarWeb.html">Home</a>
+      <a href="AboutUS.html">About</a>
+      <a href="Custom.html">Services</a>
+      <a href="block.html">Sales</a>
+      <a href="Testimonial.html">Testimonials</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+  </header>
+  
+    <!-- Contact Section -->
+<section class="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+      <form id="contactForm" class="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+        <input type="hidden" name="access_key" value="45ae2f48-56de-4524-8351-ae9bae84d16d" />
+        <input type="hidden" name="redirect" value="" />
+        
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your feedback or concern" required></textarea>
+        
+        <button type="submit">Send Message</button>
+        <p class="form-status" aria-live="polite"></p>
+      </form>
+  
+      <div class="map-container" aria-label="Company location on map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.5513724615384!2d120.99049687492106!3d14.452998886016024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cfc0d2e655e1%3A0x33c1a55164a5a83d!2sGeely%20Las%20Pi%C3%B1as!5e0!3m2!1sen!2sph!4v1744716303174!5m2!1sen!2sph"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Car Services & Sales. All rights reserved.
+    <div class="footer-icons">
+        <a class="icon-link" href="https://www.facebook.com/yourpage"
+            target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a class="icon-link" href="https://twitter.com/yourhandle" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a class="icon-link" href="https://www.instagram.com/yourhandle"
+            target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+</footer>
+    <script src="Contact.js"></script>
+</body>
+</html>
